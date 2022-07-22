@@ -2,3 +2,221 @@
     width: 100%;
     justify-content: space-between;
 }
+
+.main-form{
+    padding: 25px;
+    min-height: 550px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.form-slide-container{
+    display: flex;
+    position: relative;
+    transition: 0.4s;
+    left: 0;
+}
+.form-slide{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 450px;
+    min-width: 100%;
+    transition: 0.4s;
+    box-suppress: hide;
+    position: absolute;
+    transform: translateX(150%);
+}
+.active-form-slide{
+    transform: translateX(0);
+}
+.left-form-slide{
+    transform: translateX(-150%);
+}
+.form-slide-footer{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    position: relative;
+    gap: 30px;
+    margin-top: 30px;
+}
+.sub-txt {
+    text-align: center;
+}
+.hidden-xs-up{
+    display: none;
+}
+.input-file-button .btn {
+    position: relative;
+}
+.file-name {
+    display: block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn-center {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.slider-cont {
+    display: flex;
+    justify-content: center;
+}
+textarea#message-text {
+    line-height: inherit;
+    height: 145px !important;
+}
+.field_text_center{
+    text-align: center;
+}
+.add_link_text{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.left-inputs label,
+.right-inputs label {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+textarea {
+    resize: none;
+}
+textarea#Comments {
+    height: 135px;
+    border-radius: 10px !important;
+}
+.modal-backdrop {
+    position: inherit;
+}
+.modal-content{
+    box-shadow: 0px 0px 20px 5px #daddff;
+}
+.tabel_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.tabel_top_left {
+    padding-left: 14px;
+}
+.table > thead {
+    vertical-align: middle;
+}
+input#selectall {
+    margin-right: 5px;
+}
+
+.global_table{
+    height: 300px;
+}
+.global_table ::-webkit-scrollbar {
+    width: 5px;
+}
+.global_table ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+.global_table ::-webkit-scrollbar-thumb {
+    background: #0010f7; 
+    border-radius: 10px;
+}
+.table-scrollable {
+    height: 300px;
+    overflow-y: auto;
+}
+.collapse .table-scrollable {
+    height: 200px;
+}
+.collapse{
+    position: fixed;
+    width: 99%;
+    left: 0;
+}
+table.table.collapse_table {
+    background: #f0f2f5;
+}
+thead.collapse_header {
+    display: none;
+}
+tbody.collapse_body tr:first-child {
+    border-top: 1px solid #dfe6e9;
+}
+th, td {
+   border: 1px solid #dfe6e9;
+}
+table.table.collapse_table {
+    height: 175px;
+}
+.collapse_table ::-webkit-scrollbar {
+    width: 2px;
+}
+.collapse_table ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+.collapse_table ::-webkit-scrollbar-thumb {
+    background: #0010f7; 
+    border-radius: 10px;
+}
+i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line {
+    line-height: 0;
+    position: relative;
+    font-size: 1.5em;
+    margin-left: 15px;
+}
+i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line:before {
+    content: "\ea4e";
+    position: absolute;
+    top: 17px;
+}
+.single_colaps {
+    display: contents !important;
+}
+@media screen and (max-width:767px) {
+    .btn-center {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-form-container.btn-center button {
+        margin-bottom: 20px;
+    }
+    .form-slide.active-form-slide {
+        width: 100%;
+    }
+    .left-inputs, .right-inputs {
+        width: 100%;
+    }
+    .main-form {
+        padding: 15px;
+        overflow-y: auto;
+    }
+    .form-slide-footer {
+        justify-content: center;
+        gap: 5px;
+        margin-top: 20px;
+    }
+    .global_table {
+        height: auto;
+    }
+    .collapse_table {
+        height: auto;
+    }
+    .table-scrollable {
+        height: auto;
+        overflow-y: auto;
+    }
+    .collapse .table-scrollable {
+        height: auto;
+    }
+} 
