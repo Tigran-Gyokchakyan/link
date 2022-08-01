@@ -6,14 +6,23 @@ document.addEventListener('click',(e)=>{
         document.getElementsByClassName('form-slide')[numBtn-1].classList.remove('active-form-slide');
         document.getElementsByClassName('form-slide')[numBtn-1].classList.add('left-form-slide');
         document.getElementsByClassName('form-slide')[numBtn].classList.add('active-form-slide');
+        let lastsection = $('.form-slide:nth-child(4)');
+        if(lastsection.hasClass('active-form-slide')){
+            $('.hp-main-layout-content').addClass('scrolable');
+        }
     };
     if(e.target.classList.contains('prev-btn')){
         let numBtn = e.target.id.split('-')[1];
         document.getElementsByClassName('form-slide')[numBtn].classList.remove('active-form-slide');
         document.getElementsByClassName('form-slide')[numBtn-1].classList.remove('left-form-slide');
         document.getElementsByClassName('form-slide')[numBtn-1].classList.add('active-form-slide');
+        let lastsection = $('.form-slide:nth-child(4)');
+        if(!lastsection.hasClass('active-form-slide')){
+            $('.hp-main-layout-content').removeClass('scrolable');
+        }
     };
 });
+
 
 /* input upload*/
 $( function ( document, window, index )
@@ -58,5 +67,46 @@ $(document).ready(function() {
         else {
             $("#selectall").removeAttr("checked");
         }     
+    });
+});
+
+
+// Dom Ready
+$(function(){
+  
+    // Bind the onclick to our text class
+    // Just an example, this could be bound to anything in the row
+    $('.text').click(function(){
+     
+      // Use next until to collect our child rows 
+      var $row = $(this).closest('tr'),
+          $range = $row.nextUntil('.parent'),
+          $childRows = $range.filter('.child');
+      
+      // Capture is visible BEFORE any toggles
+      var isVisible = $childRows.is(':visible');
+      
+      // Formatting and toggling based on visibility
+      var words = isVisible ? '<i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i>' : '<i class="hp-text-color-dark-0 iconly-Light-ArrowUpSquare"></i>';
+      $childRows.toggle(!isVisible);
+      $row.find('.text').html(words);
+      
+    })
+    
+  });
+
+
+  $(document).ready(function(){
+    //group add limit
+    var maxGroup = 6;
+    
+    //add more fields group
+    $(".addMore").click(function(){
+        if($('form').find('.fieldGroup').length <= maxGroup){
+            var fieldHTML = '<div class="form-group fieldGroup">'+$(".fieldGroupCopy").html()+'</div>';
+            $('form').find('.fieldGroup:first').before(fieldHTML);
+        }else{
+            $('.addMore').hide();
+        }
     });
 });

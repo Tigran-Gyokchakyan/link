@@ -5,10 +5,14 @@
 
 .main-form{
     padding: 25px;
-    min-height: 550px;
-    background-color: #ffffff;
     border-radius: 20px;
+}
+.hp-main-layout-content{
     overflow: hidden;
+}
+.scrolable {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .form-slide-container{
     display: flex;
@@ -61,8 +65,30 @@
 }
 .btn-center {
     display: flex;
-    width: 40%;
+    width: 100%;
     justify-content: space-between;
+    gap:30px;
+}
+span.text i {
+    font-size: 20px;
+}
+.table td{
+    font-size: 18px;
+}
+.status-bg {
+    display: block !important;
+    border-radius: 20px;
+    padding: 0 !important;
+    font-size: 0 !important;
+    width: 20px;
+    height: 20px;
+}
+span.text i:before {
+    position: relative;
+    top: 3px;
+}
+.fieldGroup {
+    margin-bottom: 6px;
 }
 .slider-cont {
     display: flex;
@@ -115,9 +141,9 @@ input#selectall {
     margin-right: 5px;
 }
 
-.global_table{
+/*.global_table{
     height: 300px;
-}
+}*/
 .global_table ::-webkit-scrollbar {
     width: 5px;
 }
@@ -129,13 +155,13 @@ input#selectall {
     background: #0010f7; 
     border-radius: 10px;
 }
-.table-scrollable {
+/*.table-scrollable {
     height: 300px;
     overflow-y: auto;
 }
 .collapse .table-scrollable {
     height: 200px;
-}
+}*/
 .collapse{
     position: fixed;
     width: 99%;
@@ -180,6 +206,22 @@ i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line:before {
 }
 .single_colaps {
     display: contents !important;
+}
+
+.child {
+    background: #f0f0f0;
+    display: none;
+  }
+  .btn-center .forms-items {
+    width: 100%;
+}
+
+.forms-items label {
+    margin: 15px 0;
+}
+
+.forms-items h5 {
+    margin-top: 60px;
 }
 @media screen and (max-width:767px) {
     .btn-center {

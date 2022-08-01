@@ -758,19 +758,49 @@
                                         <div class="form-slide">
                                             <div class="slider-cont">
                                                 <div class="flex-form-container btn-center">
-                                                    <div class="left-inputs">
-                                                        <label for="PricePerLink" class="form-label">Price Per Link</label>
-                                                        <input type="text" class="form-control" id="PricePerLink">
-                                                        <label for="SellerInfo" class="form-label">Seller Info</label>
-                                                        <input type="text" class="form-control" id="SellerInfo">
-                                                        <label for="LinkType" class="form-label">Link Type</label>
-                                                        <input type="text" class="form-control" id="LinkType">
+                                                    <div class="forms-items">
+                                                        <label for="SellerName" class="form-label">Seller Name</label>
+                                                        <input type="text" class="form-control" id="SellerName">
+                                                        <h5>Price Per Link</h5>
+                                                        <label for="NetPrice" class="form-label">Net Price:</label>
+                                                        <input type="text" class="form-control" id="NetPrice">
+                                                        <label for="ClientPrice" class="form-label">Client Price:</label>
+                                                        <input type="text" class="form-control" id="ClientPrice">
                                                     </div>
-                                                    <div class="right-inputs">
-                                                        <label for="inputFile" class="form-label">Upload a File</label>
-                                                        <input type="file" class="form-control" id="inputFile">
+                                                    <div class="forms-items">
+                                                        <label class="form-label">Platform</label>
+                                                        <select class="form-select" aria-label="Choose the platform">
+                                                            <option selected>Choose the platform</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                          </select>
+                                                          <label class="form-label">Link Type</label>
+                                                          <select class="form-select" aria-label="Choose the type">
+                                                            <option selected>Choose the type</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                          </select>
                                                         <label for="Comments" class="form-label">Comments</label>
                                                         <textarea class="form-control rounded-0" id="Comments" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="forms-items">
+                                                        <label class="form-label">Screenshot URL</label>
+                                                        <div class="fieldGroup"> 
+                                                            <div class="form-group ">
+                                                              <input type="text" class="form-control urlfields" name="urlfield[]">
+                                                            </div>
+                                                        </div>
+                                                        <button href="javascript:void(0)" class="btn btn-ghost btn-primary addMore" type="button" > 
+                                                            <i class="hp-text-color-dark-0 iconly-Light-Plus"></i>
+                                                          </span>
+                                                        </button>
+                                                        <div class="fieldGroupCopy" style="display:none;"> 
+                                                            <div class=" form-group ">
+                                                              <input type="text" class="form-control" name="urlfield[]">
+                                                            </div>  
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -809,136 +839,450 @@
                                                             <tr>
                                                                 <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
                                                                 <td>domain.com/url-1</td>
-                                                                <td>200</td>
-                                                                <td data-bs-toggle="collapse" href="#collapseid1" role="button" aria-expanded="false" aria-controls="collapseid1">
-                                                                2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                                <div class="collapse" id="collapseid1">
-                                                                    
-                                                                    <div class="table-scrollable">
-                                                                    <table class="table collapse_table" >
-                                                                        <thead class="collapse_header">
-                                                                        <tr>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                            <th scope="col"></th>
-                                                                        </tr>
-                                                                        </thead>
-                                                                        <tbody class="collapse_body">
-                                                                            <tr>
-                                                                            <td></td>
-                                                                            <td><input type="checkbox" class="case form-check-input"  name="case" value="10" /> </td>
-                                                                            <td>200</td>
-                                                                            <td>out-domain.com/url-2</td>
-                                                                            <td>404</td>
-                                                                            <td>keyword 1</td>
-                                                                            <td>nofollow</td>
-                                                                            <td>ok</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                            <td></td>
-                                                                            <td><input type="checkbox" class="case form-check-input"  name="case" value="10" /> </td>
-                                                                            <td>200</td>
-                                                                            <td>out-domain.com/url-1</td>
-                                                                            <td>404</td>
-                                                                            <td>keyword 1</td>
-                                                                            <td>dofollow</td>
-                                                                            <td>ok</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                            <td></td>
-                                                                            <td><input type="checkbox" class="case form-check-input"  name="case" value="10" /> </td>
-                                                                            <td>200</td>
-                                                                            <td>out-domain.com/url-1</td>
-                                                                            <td>404</td>
-                                                                            <td>keyword 1</td>
-                                                                            <td>dofollow</td>
-                                                                            <td>ok</td>
-                                                                            </tr>
-                                                                            <tr>
-                                                                            <td></td>
-                                                                            <td><input type="checkbox" class="case form-check-input"  name="case" value="10" /> </td>
-                                                                            <td>200</td>
-                                                                            <td>out-domain.com/url-1</td>
-                                                                            <td>404</td>
-                                                                            <td>keyword 1</td>
-                                                                            <td>dofollow</td>
-                                                                            <td>ok</td>
-                                                                            </tr>
-                                                                        </tbody>
-                                                                    </table>
-                                                                    </div>
-
-                                                                </div>
-                                                                </td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input"  name="case" value="2" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td>200</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
                                                                 <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="3" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td>200</td>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
                                                                 <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
+                                                        </tbody>
+                                                        <tbody>
                                                             <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="4" /> </td>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
                                                                 <td>domain.com/url-1</td>
-                                                                <td>200</td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="5" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td>200</td>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
                                                                 <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
+                                                        </tbody>
+                                                        <tbody>
                                                             <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="6" /> </td>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
                                                                 <td>domain.com/url-1</td>
-                                                                <td>200</td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="7" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td>200</td>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
                                                                 <td>out-domain.com/url-1</td>
-                                                                <td>404</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td>ok</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td>domain.com/url-1</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td>2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>     
+                                                            <tr class="child">      
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                            </tr>
+                                                            <tr class="child">    
+                                                                <td colspan="2" align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success">200</span></td>
+                                                                <td>out-domain.com/url-1</td>
+                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
+                                                                <td>keyword 1</td>
+                                                                <td>dofollow</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
