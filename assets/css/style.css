@@ -13,6 +13,7 @@
 .scrolable {
     overflow-y: scroll;
     overflow-x: hidden;
+    margin-bottom: 30px;
 }
 .form-slide-container{
     display: flex;
@@ -83,7 +84,13 @@ span.text i {
     width: 20px;
     height: 20px;
 }
-span.text i:before {
+.uploads_sections .slider-cont {
+    width: 40% !important;
+    margin: 0 auto;
+}
+
+.text i:before
+ {
     position: relative;
     top: 3px;
 }
@@ -140,10 +147,23 @@ textarea#Comments {
 input#selectall {
     margin-right: 5px;
 }
-
-/*.global_table{
-    height: 300px;
-}*/
+input#selectall {
+    margin-top: 11px;
+}
+.campbtn {
+    margin: 0 5px;
+}
+.flex-row div {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+.flex-row div span {
+    margin-top: 5px;
+}
+.extlinkstatus .status-bg {
+    margin-top: 0;
+}
 .global_table ::-webkit-scrollbar {
     width: 5px;
 }
@@ -208,20 +228,43 @@ i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line:before {
     display: contents !important;
 }
 
-.child {
+.child, .childtextextlink, .childtextlink, .childtextLps {
     background: #f0f0f0;
     display: none;
   }
   .btn-center .forms-items {
     width: 100%;
 }
-
+.childtextlinkItems {
+    display: flex;
+    justify-content: space-between;
+}
+.childtextLpsItems {
+    display: flex;
+    justify-content: space-around;
+}
+.tabel_bottom_cont {
+    display: flex;
+    justify-content: space-between;
+}
 .forms-items label {
     margin: 15px 0;
 }
-
+.childitem p b {
+    margin-right: 10px;
+}
 .forms-items h5 {
     margin-top: 60px;
+}
+.table td {
+    font-size: 14px;
+}
+.rowhaeder {
+    background: #fff;
+}
+
+.rowhaeder td {
+    padding: 5px 15px;
 }
 @media screen and (max-width:767px) {
     .btn-center {

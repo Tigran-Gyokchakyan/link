@@ -659,7 +659,7 @@
                 </div>
             </div>
 
-            <div class="hp-main-layout-content">
+            <div class="hp-main-layout-content scrolable">
                 <div class="row mb-32 gy-32">
                     <div class="col-12">
                         <div class="row justify-content-between gy-32">
@@ -676,30 +676,9 @@
                                     </ol>
                                 </nav>
                             </div>
-
-                            <div class="col hp-flex-none w-auto">
-                                <div class="row g-16">
-                                    <div class="col hp-flex-none w-auto">
-                                        <button class="btn btn-ghost btn-primary me-14">Action</button>
-                                    </div>
-
-                                    <div class="col hp-flex-none w-auto">
-                                        <button type="button" class="btn btn-primary btn-icon-only">
-                                            <i class="ri-settings-4-line" style="font-size: 16px;"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <div class="hp-page-title">
-                            <h1 class="mb-8">Single Campaign</h1>
-
-                            <p class="mb-0 hp-p1-body"></p>
-                        </div>
-                    </div>
 
                     <div class="col-12">                        
                         <section class="trip-process">
@@ -712,429 +691,1556 @@
                                             <div class="tabel_top_left">
                                                 <input class="form-check-input" type="checkbox" id="selectall">
                                                 <label class="form-check-label" for="selectall">Select All</label>
-                                                <button class="btn-primary">Index</button>
-                                                <button class="btn-primary">Boost</button>
-                                                <button class="btn-primary">Edit</button>
-                                                <button class="btn-primary">Delete</button>
-                                                <button class="btn-primary">Google Check</button>
+                                                <button class="btn-primary btn campbtn">Boost</button>
+                                                <button class="btn-primary btn campbtn">Edit</button>
+                                                <button class="btn-primary btn campbtn">Delete</button>
+                                                <button class="btn-primary btn campbtn">Google Check</button>
                                             </div>     
                                         </div>
                                         <div class="table-scrollable">
-                                            <table class="table">
+                                            <table class="table global_table">
                                                 <thead>
                                                 <tr>
                                                     <th scope="col">#</th>
-                                                    <th scope="col">Links</th>
+                                                    <th scope="col">Link</th>
                                                     <th scope="col">Status</th>
-                                                    <th scope="col">External Links</th>
-                                                    <th scope="col">Start Date</th>
-                                                    <th scope="col">Last Checked</th>
-                                                    <th scope="col">External Links Status</th>
-                                                    <th scope="col">Google Index Status</th>
+                                                    <th scope="col">External</br>Links</th>
+                                                    <th scope="col">Start</br>Date</th>
+                                                    <th scope="col">Last</br>Checked</th>
+                                                    <th scope="col">External </br> Links Status </th>
+                                                    <th scope="col">Google Index </br>Status</th>
                                                     <th scope="col">LPS</th>
                                                     <th scope="col">Links Details</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid1" role="button" aria-expanded="false" aria-controls="collapseid1">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid1">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid2" role="button" aria-expanded="false" aria-controls="collapseid2">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid2">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid3" role="button" aria-expanded="false" aria-controls="collapseid3">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid3">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid4" role="button" aria-expanded="false" aria-controls="collapseid4">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid4">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid5" role="button" aria-expanded="false" aria-controls="collapseid5">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid5">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
                                                     <tr>
-                                                        <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                        <td>domain.com/url-1</td>
-                                                        <td>200</td>
-                                                        <td data-bs-toggle="collapse" href="#collapseid6" role="button" aria-expanded="false" aria-controls="collapseid6">
-                                                        2 external link <i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i>
-                                                        <div class="collapse" id="collapseid6">
-                                                            
-                                                            <div class="table-scrollable">
-                                                            <table class="table collapse_table" >
-                                                                <thead class="collapse_header single_colaps">
-                                                                <tr>
-                                                                    <th scope="col">External Link</th>
-                                                                    <th scope="col">Keyword</th>
-                                                                    <th scope="col">Rel</th>
-                                                                    <th scope="col">Robot Tag</th>
-                                                                    <th scope="col">Status</th>
-                                                                    <th scope="col">Action</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody class="collapse_body">
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                    <td>out-domain.com/url-1</td>
-                                                                    <td>keyword 1</td>
-                                                                    <td>dofollow</td>
-                                                                    <td>indexable</td>
-                                                                    <td>ok</td>
-                                                                    <td><button class="btn btn-primary">Change Keyword</button></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
                                                             </div>
-
-                                                        </div>
                                                         </td>
-                                                        <td>404</td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
                                                         <td>keyword 1</td>
                                                         <td>dofollow</td>
-                                                        <td>ok</td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
-                                                        <td><i class="hp-text-color-dark-0 ri-2x ri-arrow-down-s-line"></i></td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
                                                     </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
+                                                </tbody>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="flex-row"><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                        <td class="flex-row">domain.com/url-1</td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="extlink flex-row">
+                                                            <div>
+                                                                2<span class="textextlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> 
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">09.07.2022</td>
+                                                        <td class="flex-row">3 hours ago</td>
+                                                        <td class="extlinkstatus flex-row">
+                                                            <div>
+                                                                <span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger status-bg"></span> 
+                                                                <span class="textlinkstatus"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <div>
+                                                                <span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textLps"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                        <td class="flex-row">
+                                                            <span class="textlink"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span>
+                                                        </td>
+                                                    </tr>
+
+                                                    <!-- External links child -->
+                                                    <tr class="childtextextlink rowhaeder">      
+                                                        <td colspan="2"></td>   
+                                                        <td colspan="2">External Link</td>
+                                                        <td >Keyword</td>
+                                                        <td>Rel</td>
+                                                        <td>Robot Tag</td>
+                                                        <td>Status</td>
+                                                        <td colspan="2"></td>
+                                                    </tr>  
+                                                    <tr class="childtextextlink">      
+                                                        <td colspan="2"></td>
+                                                        <td colspan="2">out-domain.com/url-1</td>
+                                                        <td>keyword 1</td>
+                                                        <td>dofollow</td>
+                                                        <td>indexable</td>
+                                                        <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                        <td colspan="2"><button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#changekeyword">Change Keyword</button></td>
+                                                    </tr>
+
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextLps">      
+                                                        <td colspan="10">
+                                                            <div class="childtextLpsItems">
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>DA:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>CF:</b>50</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>TF:</b>50</p>
+                                                                </div>
+                                                        </td>
+                                                    </tr>  
+                                                    
+                                                    <!-- Link Details child -->
+                                                    <tr class="childtextlink">      
+                                                        <td colspan="10">
+                                                            <div class="childtextlinkItems">
+                                                                <div class="childitem">
+                                                                    <p><b>Seller Name:</b>Lion</p>
+                                                                    <p><b>Platform:</b>Fiverr</p>
+                                                                    <p><b>Link Type:</b>Guest Post</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Price</b></p>
+                                                                    <p><b>Real Price:</b>$10</p>
+                                                                    <p><b>Client Price:</b>$100</p>
+                                                                </div>
+                                                                <div class="childitem">
+                                                                    <p><b>Screenshot URL:</b>url</p>
+                                                                    <p><b>Comments:</b>Here are the comments of the user regarding the links.</p>
+                                                            </div>
+                                                        </td>
+                                                    </tr>  
                                                 </tbody>
                                             </table>
-                                        </div>   
+                                        </div>    
+                                        <div class="tabel_bottom">
+                                            <div class="tabel_bottom_cont">
+                                                <a href="#" class="btn-primary btn">Add More Links Manually</a>
+                                                <a href="#" class="btn-primary btn">Download</a>
+                                            </div>     
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1143,6 +2249,60 @@
                             </div>
                         </div>
                     </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="changekeyword" tabindex="-1" aria-labelledby="changekeywordLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="changekeywordLabel">Change Keywords</h5>
+                            <button type="button" class="btn btn-primary">Recheck</button>
+                        </div>
+            
+                        <div class="modal-body">
+                            <table class="table global_table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">External Links</th>
+                                    <th scope="col">Keyword</th>
+                                    <th scope="col">Robot Tag</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>      
+                                        <td><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>   
+                                        <td>out-domain.com/url-1</td>
+                                        <td>keyword 1</td>
+                                        <td>dofollow</td>
+                                    </tr>  
+                                    <tr>      
+                                        <td><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>   
+                                        <td>out-domain.com/url-1</td>
+                                        <td>keyword 1</td>
+                                        <td>dofollow</td>
+                                    </tr>  
+                                    <tr>      
+                                        <td><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>   
+                                        <td>out-domain.com/url-1</td>
+                                        <td>keyword 1</td>
+                                        <td>dofollow</td>
+                                    </tr>  
+                                    <tr>      
+                                        <td><input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>   
+                                        <td>out-domain.com/url-1</td>
+                                        <td>keyword 1</td>
+                                        <td>dofollow</td>
+                                    </tr>  
+                                </tbody>
+                            </table>
+                        </div>
+            
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>

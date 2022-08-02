@@ -92,8 +92,60 @@ $(function(){
       $row.find('.text').html(words);
       
     })
+
+    $('.textextlink').click(function(){
+     
+        // Use next until to collect our child rows 
+        var $row = $(this).closest('tr'),
+            $range = $row.nextUntil('.parent'),
+            $childRows = $range.filter('.childtextextlink');
+        
+        // Capture is visible BEFORE any toggles
+        var isVisible = $childRows.is(':visible');
+        
+        // Formatting and toggling based on visibility
+        var words = isVisible ? '<i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i>' : '<i class="hp-text-color-dark-0 iconly-Light-ArrowUpSquare"></i>';
+        $childRows.toggle(!isVisible);
+        $row.find('.textextlink').html(words);
+        
+      })
     
-  });
+
+      $('.textlink').click(function(){
+     
+        // Use next until to collect our child rows 
+        var $row = $(this).closest('tr'),
+            $range = $row.nextUntil('.parent'),
+            $childRows = $range.filter('.childtextlink');
+        
+        // Capture is visible BEFORE any toggles
+        var isVisible = $childRows.is(':visible');
+        
+        // Formatting and toggling based on visibility
+        var words = isVisible ? '<i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i>' : '<i class="hp-text-color-dark-0 iconly-Light-ArrowUpSquare"></i>';
+        $childRows.toggle(!isVisible);
+        $row.find('.textlink').html(words);
+        
+      })
+      
+      $('.textLps').click(function(){
+     
+        // Use next until to collect our child rows 
+        var $row = $(this).closest('tr'),
+            $range = $row.nextUntil('.parent'),
+            $childRows = $range.filter('.childtextLps');
+        
+        // Capture is visible BEFORE any toggles
+        var isVisible = $childRows.is(':visible');
+        
+        // Formatting and toggling based on visibility
+        var words = isVisible ? '<i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i>' : '<i class="hp-text-color-dark-0 iconly-Light-ArrowUpSquare"></i>';
+        $childRows.toggle(!isVisible);
+        $row.find('.textLps').html(words);
+        
+      })
+
+});
 
 
   $(document).ready(function(){
