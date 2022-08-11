@@ -266,6 +266,10 @@ i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line:before {
 .rowhaeder td {
     padding: 5px 15px;
 }
+.form-check.form-switch {
+    display: flex;
+    gap: 30px;
+}
 @media screen and (max-width:767px) {
     .btn-center {
         width: 100%;
