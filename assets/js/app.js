@@ -2131,6 +2131,7 @@ if (document.querySelector("#analytics-expenses-chart")) {
     chart.render();
 }
 
+
 // Analytics Marketplace
 let optionsAnalyticsMarketplace = {
     series: [61, 82, 65],

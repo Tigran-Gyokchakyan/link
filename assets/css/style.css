@@ -270,6 +270,60 @@ i.hp-text-color-dark-0.ri-2x.ri-arrow-down-s-line:before {
     display: flex;
     gap: 30px;
 }
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    margin: 0;
+}
+.card-body.all-copmain-card {
+    padding: 0;
+    margin: 0;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content {
+    display: flex;
+    align-items: center;
+}
+.card-content-static {
+    width: 55%;
+    border-right: #636e72 solid 1px;
+}
+
+.card-content-grafic {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hp-card-250 {
+    min-height: 325px;
+}
+.add-new-comp-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.add-new-actions {
+    font-size: 30px;
+    color: #636e72;
+}
+
+a.add-new-actions:hover {
+    color: #0010f7;
+}
+.header-gap{
+    gap:30px;
+}
 @media screen and (max-width:767px) {
     .btn-center {
         width: 100%;
