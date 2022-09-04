@@ -332,7 +332,7 @@ a.add-new-actions:hover {
     justify-content: space-between;
 }
 .links-fields .field_text_center {
-    width: 49%;
+    width: 100%;
 }
 textarea.form-control {
     min-height: calc(13.715em + 2px);
