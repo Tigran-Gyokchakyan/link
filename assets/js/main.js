@@ -76,7 +76,7 @@ $(function(){
   
     // Bind the onclick to our text class
     // Just an example, this could be bound to anything in the row
-    $('.text').click(function(){
+    $('.togglechild').click(function(){
      
       // Use next until to collect our child rows 
       var $row = $(this).closest('tr'),
@@ -87,9 +87,8 @@ $(function(){
       var isVisible = $childRows.is(':visible');
       
       // Formatting and toggling based on visibility
-      var words = isVisible ? '<i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i>' : '<i class="hp-text-color-dark-0 iconly-Light-ArrowUpSquare"></i>';
       $childRows.toggle(!isVisible);
-      $row.find('.text').html(words);
+      $row.find('.togglechild').html(words);
       
     })
 
@@ -164,3 +163,22 @@ $(function(){
 });
 
 
+$("#search").on("keyup", function() {
+    var value = $(this).val();
+
+    $("table tr").each(function(index) {
+        if (index !== 0) {
+
+            $row = $(this);
+
+            var id = $row.find("td:first").text();
+
+            if (id.indexOf(value) !== 0) {
+                $row.hide();
+            }
+            else {
+                $row.show();
+            }
+        }
+    });
+});

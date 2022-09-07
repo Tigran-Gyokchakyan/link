@@ -625,16 +625,26 @@
                                             <div class="flex-form-container">
                                                 <div class="tabel_top">
                                                     <div class="tabel_top_left">
-                                                        <input class="form-check-input" type="checkbox" id="selectall">
-                                                        <label class="form-check-label" for="selectall">Select All</label>
+                                                        <div class="selectall-wrapper">
+                                                            <input class="form-check-input" type="checkbox" id="selectall">
+                                                            <label class="form-check-label" for="selectall">Select All</label>
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <input type="text" id="search" class="form-control" placeholder="Search..." data-search="">
+                                                            <span class="input-group-text bg-white hp-bg-dark-100 text-black-80">
+                                                                <svg viewBox="64 64 896 896" focusable="false" data-icon="search" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                                    <path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
                                                     </div>                                                    
                                                     <div class="tabel_top_right">
                                                         <div class="form-check form-switch">
                                                             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
                                                             <label class="form-check-label" for="flexSwitchCheckChecked">
-                                                              <span class="ms-12">Index selected Links</span>
+                                                                <span class="ms-12">Index selected Links</span>
                                                             </label>
-                                                          </div>
+                                                            </div>
                                                     </div>
                                                 </div>
                                                 <div class="table-scrollable">
@@ -644,323 +654,59 @@
                                                             <th scope="col">#</th>
                                                             <th scope="col">Links</th>
                                                             <th scope="col">Status</th>
-                                                            <th scope="col" colspan="2">Outgoing Links (Target URLs)</th>
+                                                            <th scope="col" colspan="2">Outgoing Links</th>
                                                             <th scope="col">Robot Tag</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                            <tr class="togglechild">
+                                                                <td><input type="checkbox" class="case form-check-input" name="case" value="1" /></td>
                                                                 <td>domain.com/url-1</td>
                                                                 <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
+                                                                <td colspan="2">2 external link</td>
                                                                 <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
                                                             </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
+                                                            <tr class="child rowhaeder">
+                                                                <td></td>     
                                                                 <td>External Links</td>
                                                                 <td>Status</td>
                                                                 <td>Keywords</td>
                                                                 <td>Rel</td>
-                                                                <td>Robot Tag</td>
+                                                                <td>Robot Tag</td> 
                                                             </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
+                                                            <tr class="child">   
+                                                                <td><input type="checkbox" class="case form-check-input" name="case" value="1" /></td> 
                                                                 <td>out-domain.com/url-1</td>
                                                                 <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>  
                                                             </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
+                                                        </tbody>
+                                                        <tbody>
+                                                            <tr class="togglechild">
+                                                                <td><input type="checkbox" class="case form-check-input" name="case" value="1" /></td>
+                                                                <td>poxos</td>
+                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
+                                                                <td colspan="2">2 external link</td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
+                                                            </tr>
+                                                            <tr class="child rowhaeder"> 
+                                                                <td></td>    
+                                                                <td>External Links</td>
+                                                                <td>Status</td>
+                                                                <td>Keywords</td>
+                                                                <td>Rel</td>
+                                                                <td>Robot Tag</td> 
+                                                            </tr>   
+                                                            <tr class="child">  
+                                                                <td><input type="checkbox" class="case form-check-input" name="case" value="1" /></td>  
+                                                                <td>valod</td>
                                                                 <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
                                                                 <td>keyword 1</td>
                                                                 <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
+                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>  
                                                             </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>  
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
-                                                        </tbody>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>domain.com/url-1</td>
-                                                                <td><span class="badge bg-success-4 hp-bg-dark-success text-success border-success status-bg"></span></td>
-                                                                <td colspan="2">2 external link <span class="text"><i class="hp-text-color-dark-0 iconly-Light-ArrowDownSquare"></i></span> </td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning status-bg"></span></td>
-                                                            </tr>
-                                                            <tr class="child rowhaeder">      
-                                                                <td></td>   
-                                                                <td>External Links</td>
-                                                                <td>Status</td>
-                                                                <td>Keywords</td>
-                                                                <td>Rel</td>
-                                                                <td>Robot Tag</td>
-                                                            </tr>   
-                                                            <tr class="child">      
-                                                                <td align="right"> <input type="checkbox" class="case form-check-input" name="case" value="1" /> </td>
-                                                                <td>out-domain.com/url-1</td>
-                                                                <td><span class="badge bg-danger-4 hp-bg-dark-danger text-danger border-danger">404</span></td>
-                                                                <td>keyword 1</td>
-                                                                <td>dofollow</td>
-                                                                <td><span class="badge bg-warning-4 hp-bg-dark-warning text-warning border-warning">301</span></td>
-                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>    
