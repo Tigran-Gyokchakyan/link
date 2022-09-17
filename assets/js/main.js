@@ -182,3 +182,49 @@ $("#search").on("keyup", function() {
         }
     });
 });
+
+// Pricing Page
+$(function () {
+    $("#pricing-billed-pro").change(function (e) {
+        if (e.target.checked) {
+            let pricingvalue20 = $(".pro-amout-20").html();
+            $(".pro-amout-20").html(pricingvalue20 * 10);
+            let pricingvalue40 = $(".pro-amout-40").html();
+            $(".pro-amout-40").html(pricingvalue40 * 10);
+            let pricingvalue100 = $(".pro-amout-100").html();
+            $(".pro-amout-100").html(pricingvalue100 * 10);
+            $(".pro-after").html("/annual");
+        } else {
+            let pricingvalue20 = $(".pro-amout-20").html();
+            $(".pro-amout-20").html(pricingvalue20 / 10);
+            let pricingvalue40 = $(".pro-amout-40").html();
+            $(".pro-amout-40").html(pricingvalue40 / 10);
+            let pricingvalue100 = $(".pro-amout-100").html();
+            $(".pro-amout-100").html(pricingvalue100 / 10);
+            $(".pro-after").html("/monthly");
+        }
+    })
+})
+
+// Pricing Page
+$(function () {
+    $("#pricing-billed-basic").change(function (e) {
+        if (e.target.checked) {
+            let basicpricingvalue5 = $(".basic-amout-5").html();
+            $(".basic-amout-5").html(basicpricingvalue5 * 10);
+            let basicpricingvalue10 = $(".basic-amout-10").html();
+            $(".basic-amout-10").html(basicpricingvalue10 * 10);
+            let basicpricingvalue25 = $(".basic-amout-25").html();
+            $(".basic-amout-25").html(basicpricingvalue25 * 10);
+            $(".basic-after").html("/annual");
+        } else {
+            let basicpricingvalue5 = $(".basic-amout-5").html();
+            $(".basic-amout-5").html(basicpricingvalue5 / 10);
+            let basicpricingvalue10 = $(".basic-amout-10").html();
+            $(".basic-amout-10").html(basicpricingvalue10 / 10);
+            let basicpricingvalue25 = $(".basic-amout-25").html();
+            $(".basic-amout-25").html(basicpricingvalue25 / 10);
+            $(".basic-after").html("/monthly");
+        }
+    })
+})
